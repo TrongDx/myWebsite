@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Giới Thiệu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<title>Trong Dx's information</title>
+	<input type="image" style="text-align: left;padding: 0 0 0 0;border: 2rem;width: 50px;height: 50px;margin-top: 0px;margin-bottom: 0px;" src="./img/loa1.png" onclick="play()">
+	<audio autoplay id="audio" src="./music/X2Download.app - Phần phim Spider Man buồn nhất (320 kbps).mp3"></audio>
+	<main>
+		<header>
+		<img src="./img/avt.jpg">
+		<h1 style="
+		margin-top: 12px;
+		margin-bottom: 5px;
+		">@TrongDx</h1>
+		<h1 style="
+		margin-bottom: 5px;
+		margin-top: 5px;
+		">xuantrong02032002@gmail.com</h1>
+	</header>
+	<ul>
+		<li>
+			<a href="https://trongdx-mp3-player-023.on.drv.tw/List-Music/"> <img src="./img/mp3.png" style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+    >List Music</a>
+		</li>
+        
+		<li>
+			<a href="https://www.facebook.com/TrongXuanDinh0203"><img src="./img/facebook.png"
+				style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+
+    >Facebook</a>
+		</li>
+
+		<li>
+			<a href="https://www.instagram.com/trongdx023/"><img src="./img/insta.png"
+				style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+
+    >Instagram</a>
+		</li>
+		<li>
+			<a href="https://www.tiktok.com/@trong0203"><img src="./img/tiktok.png"
+				style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+
+    >Tiktok</a>
+		</li>
+	</ul>
+	</main>
+	<p>Liên Hệ : 0359138119</p>
+	<div class="cuoi">
+    @Copyright 2022 TrongDx, All rights reserved
+		
+	</div>
+	<script>
+		let isPlaying = false;
+ 		let isRepeat = false;
+		function play() {
+			if(isPlaying){
+		  		var audio = document.getElementById("audio");
+		  		audio.play();
+				isPlaying = false;
+			}
+			else{
+				var audio = document.getElementById("audio");
+		  		audio.pause();
+				isPlaying = true;
+			}
+		}
+	</script>
+</body>
+</html>
